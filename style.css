@@ -1,0 +1,65 @@
+:root {
+  --bg-1: #8685a2;
+  --bg-2: #c1b9d3;
+  --white: #ffffff;
+  --gray: #ececf3;
+  --purple: #411583;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-2);
+}
+
+.mp3-player-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 350px;
+  background-color: var(--white);
+}
+
+.art-box {
+  background: url('imgs/lechuck.jpg');
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+
+  .playlist-icon {
+    margin-left: auto;
+  }
+
+  .music-bars {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: white;
+    }
+  }
+
+}
+
+.controls-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #a7a7a7;
+  }
+
+  .controls {
+    margin: 2em 0;
+  }
+}
