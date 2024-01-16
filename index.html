@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP3 Player</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="script.js"></script>
-</head>
-<body>
-  <article class="mp3-player-container">
-    <section class="art-box">
-      <div class="playlist-icon">Playlist</div>
-      <div class="music-bars">
-        <p class="current-time">01:00</p>
-        <p class="total-time">02:18</p>
-      </div>
-    </section>
-    <section class="controls-box">
-      <h2 id="title">Nombre Canción</h2>
-      <p id="autor">Autor</p>
-      <div class="controls">
-        <button id="previous" type="button">Previous</button>
-        <button id="play" type="button">Play</button>
-        <button type="button">Next</button>
-      </div>
-    </section>
-    <section class="status-box">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quia eligendi sunt eius aliquid et, ab nam! Maiores accusantium minus possimus sit laudantium quaerat debitis? Corrupti quo obcaecati dignissimos numquam.</p>
-      <progress id="control_volumen" max="100" value="50">50%</progress>
-    </section>
-  </article>
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <article class="mp3-player-container">
+      <section class="art-box">
+        <div class="playlist-icon">Playlist</div>
+        <div class="music-bars">
+          <p id="currentTime" class="current-time"></p>
+          <p id="duration" class="total-time"></p>
+        </div>
+      </section>
+      <section class="controls-box">
+        <h2 id="title">Nombre Canción</h2>
+        <p id="autor">Autor</p>
+        <div class="controls">
+          <button id="previous" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-skip-back">
+              <polygon points="19 20 9 12 19 4 19 20" />
+              <line x1="5" x2="5" y1="19" y2="5" />
+            </svg>
+          </button>
+          <button id="play" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-play">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </button>
+          <button id="next" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-skip-forward">
+              <polygon points="5 4 15 12 5 20 5 4" />
+              <line x1="19" x2="19" y1="5" y2="19" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="status-box">
+        <p>Cuando solo hay un candidato, sólo hay una elección</p>
+        <progress id="control_volumen" max="100" value="0"></progress>
+      </section>
+    </article>
+  </body>
+
 </html>
