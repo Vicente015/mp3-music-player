@@ -25,7 +25,7 @@ body {
   background-color: var(--white);
 }
 
-.art-box {
+#art-box {
   background: url('imgs/lechuck.jpg');
   padding: 1em;
   display: flex;
@@ -108,4 +108,8 @@ body {
   & p {
     color: white;
   }
+}
+
+.hidden {
+  display: none;
 }
